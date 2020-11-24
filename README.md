@@ -1,25 +1,20 @@
-# MUNDUNGUS FLETCHER GAME
+# Mundungus Fletcher game
 
-## TASKS
+## Tasks
 
-### PRE-COMMIT
-- [ ] Check everything working
-- [ ] Delete atom-specific
-- [ ] Remove this list, initialise git repo
-
-### INIT APP
+### init app
 - [ ] redux -> list of GAMEs containing USERs & NAMEs
 - [ ] layout
 
-### NEW USER
+### new user
 - [ ] When window opened, new user added
 - [ ] ask for username - only add user once username inputted
 
-### MAIN PAGE
+### main page
 - [ ] display list of users
 - [ ] button to "start game"
 
-### START GAME
+### start game
 - [ ] on start button press, all users taken to NAME input
 - [ ] on NAME input, NAMEs added to store
 - [ ] "done" button when you have finished adding NAMEs
@@ -27,17 +22,17 @@
 - [ ] option to "start game" - if this is pressed, users that aren't ready are removed from the game
 - [ ] when all users are ready, game starts
 
-### START ROUND
+### start round
 - [ ] button to "start round"
 - [ ] on button press 1 minute timer starts
 - [ ] display a NAME, picked randomly from list
 - [ ] "next" button -> on press, name is removed from list, new name shown
 - [ ] time's up, button to ask if user got the final name (if they did, remove it from the list)
 
-### GAME OVER
+### game over
 - [ ] game ends when all names have been guessed
 
-### OPTIONAL
+### optional
 - [ ] when a round is in play, noone else can press "start round"
 - [ ] select the user you will read to 
 - [ ] SCORE - add this to the GAME in the store
