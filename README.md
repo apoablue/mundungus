@@ -3,8 +3,8 @@
 ## Tasks
 
 ### init app
-- [ ] redux -> list of GAMEs containing USERs & NAMEs
-- [ ] layout
+- [x] redux -> list of GAMEs containing USERs & NAMEs
+- [x] layout
 
 ### new user
 - [ ] When window opened, new user added
