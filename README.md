@@ -7,12 +7,13 @@
 - [x] layout
 
 ### new user
-- [ ] When window opened, new user added
-- [ ] ask for username - only add user once username inputted
+- [x] When window opened, new user added
+- [x] ask for username - only add user once username inputted
 
 ### main page
-- [ ] display list of users
-- [ ] button to "start game"
+- [x] display username
+- [x] display list of users
+- [x] button to "start game"
 
 ### start game
 - [ ] on start button press, all users taken to NAME input
@@ -38,6 +39,7 @@
 - [ ] SCORE - add this to the GAME in the store
 - [ ] when "next" button is pressed, add 1 point to current user & person guessing
 - [ ] when round ends, if user got the final name, add 1 point to current user & person guessing
+- [ ] store username in localStorage
 
 ## General set-up guide
 
