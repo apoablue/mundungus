@@ -3,6 +3,7 @@ const path = require('path')
 
 const config = require('./config/server_config')
 const apiRoute = require('./routes/api')
+const gameserver = require("./server/gameserver");
 
 //Set up express & sessions
 const app = express()
@@ -29,3 +30,6 @@ const server = app.listen(config.web.port, function (err) {
   const port = server.address().port
   console.log('(HTTP) App now running on port', port)
 })
+
+gameserver.setServer(server);
+
