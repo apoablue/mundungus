@@ -1,3 +1,5 @@
 export const ACTION_TYPE = {
   UPDATE_USERS: 1,
+  NEW_GAME: 2,
+  UPDATE_NAMES: 3,
 }

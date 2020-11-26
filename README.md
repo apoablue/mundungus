@@ -16,11 +16,11 @@
 - [x] button to "start game"
 
 ### start game
-- [ ] on start button press, all users taken to NAME input
-- [ ] on NAME input, NAMEs added to store
-- [ ] "done" button when you have finished adding NAMEs
+- [x] on start button press, all users taken to NAME input
+- [x] on NAME input, NAMEs added to store
+- [x] "done" button when you have finished adding NAMEs
 - [ ] list of users ready to play
-- [ ] option to "start game" - if this is pressed, users that aren't ready are removed from the game
+- [ ] option to "start game"
 - [ ] when all users are ready, game starts
 
 ### start round

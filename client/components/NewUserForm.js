@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Button from './Button'
 
-const StyledWrapper = styled.div`
+const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,14 +16,18 @@ const StyledInput = styled.input`
   padding: 0.25em;
 `
 
-const Username = ({ username, setUsername, onSubmit }) => {
+const NewUserForm = ({ username, setUsername, onSubmit }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    onSubmit()
+  }
   return (
-    <StyledWrapper>
+    <StyledForm onSubmit={(e) => handleSubmit(e)}>
       Choose a username
       <StyledInput onChange={e => setUsername(e.target.value)} type="text" />
-      <Button disabled={!username} isBlock onClick={onSubmit}>Go</Button>
-    </StyledWrapper>
+      <Button disabled={!username} isBlock>Go</Button>
+    </StyledForm>
   )
 }
 
-export default Username
+export default NewUserForm
