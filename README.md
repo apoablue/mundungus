@@ -1,6 +1,40 @@
 # Mundungus Fletcher game
+This is a game to be played together while apart.
 
-## Tasks
+## General set-up guide
+
+### ENVIRONMENT
+
+NodeJS running express for the backend with a React app for the frontend.
+
+#### Basic Setup
+
+- Follow instructions for installing NodeJS for your operating system here: https://nodejs.org/en/download/package-manager/
+- Install Git on your machine (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Run npm install
+  `cd /path/to/project npm install`
+- Start server using the built in script - this will ensure webpack builds the React app
+  `npm start`
+- Visit http://localhost:3000 in a browser to see the application
+
+**Running the "dev" script will start a webpack build process which will compile all the React components and CSS into a single bundle file. It will also start a nodemon instance of the server which means it will automatically restart and rebuild when you make a change to a Javascript file.**
+
+#### Directory Structure
+
+```
+.
+├── config (contains server specific config file)
+├── client (frontend React code)
+│   └── components
+├── public (static, publicly available files)
+│   ├── dist (contains generated files, do not edit any files in here)
+│   └── img (static image files)
+├── routes (API routing configuration)
+├── server (backend processing)
+└── server.js (main file)
+```
+
+## Feature List
 
 ### init app
 - [x] redux -> list of GAMEs containing USERs & NAMEs
@@ -40,37 +74,3 @@
 - [ ] when "next" button is pressed, add 1 point to current user & person guessing
 - [ ] when round ends, if user got the final name, add 1 point to current user & person guessing
 - [ ] store username in localStorage
-
-## General set-up guide
-
-### ENVIRONMENT
-
-NodeJS running express for the backend with a React app for the frontend.
-
-#### Basic Setup
-
-- Follow instructions for installing NodeJS for your operating system here: https://nodejs.org/en/download/package-manager/
-- Install Git on your machine (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Run npm install
-  `cd /path/to/project npm install`
-- Start server using the built in script - this will ensure webpack builds the React app
-  `npm start`
-- Visit http://localhost:3000 in a browser to see the application
-
-**Running the "dev" script will start a webpack build process which will compile all the React components and CSS into a single bundle file. It will also start a nodemon instance of the server which means it will automatically restart and rebuild when you make a change to a Javascript file.**
-
-#### Directory Structure
-
-```
-.
-├── config (contains server specific config file)
-├── client (frontend React code)
-│   └── components
-├── public (static, publicly available files)
-│   ├── dist (contains generated files, do not edit any files in here)
-│   └── img (static image files)
-├── routes (API routing configuration)
-├── server (backend processing)
-└── server.js (main file)
-```
-
